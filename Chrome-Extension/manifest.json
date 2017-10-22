@@ -1,0 +1,28 @@
+{
+  "name": "VK",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "https://vk.com/",
+    "https://*.vk.com/",
+    "https://95.213.170.76/*",
+    "unlimitedStorage"
+  ],
+  "web_accessible_resources": [
+    "images/*.png"
+  ],
+  "background": {
+      "scripts": ["jquery.js","background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://vk.com/im*"],
+      "js": ["jquery.js","vk.js"],
+      "run_at": "document_end"
+    }
+   ],
+   "browser_action":{
+    "default_popup":"hello.html"
+  }
+}
