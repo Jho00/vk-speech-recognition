@@ -2,7 +2,7 @@
 import vk_api
 import time
 
-vk = vk_api.VkApi(token="1717c3751aef93f3c8433b3f6601a1a417a5e8bef158fab182e7f22b327919a7e1931af18b7dca0333e39")
+vk = vk_api.VkApi(token="*************************************************************************")
 vk._auth_token()
 
 #считываем последние сообщения от пользователя
